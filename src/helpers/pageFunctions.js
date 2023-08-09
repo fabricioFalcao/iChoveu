@@ -75,7 +75,7 @@ export function showForecast(forecastList) {
 }
 
 const handleRequest = async (url) => {
-  const result = await fetch(`http://api.weatherapi.com/v1/forecast.json?lang=pt&key=${token}&q=${url}}&days=3`);
+  const result = await fetch(`http://api.weatherapi.com/v1/forecast.json?lang=pt&key=${token}&q=${url}}&days=7`);
   const data = await result.json();
   const { forecast: { forecastday } } = await data;
   const weekForecast = forecastday.map(({
