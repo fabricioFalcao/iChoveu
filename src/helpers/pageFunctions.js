@@ -94,7 +94,7 @@ const handleRequest = async (url) => {
 };
 
 /**
- * Recebe um objeto com as informações de uma cidade e retorna um elemento HTML
+ * Recebe um objeto com as informações de uma cidade e retorna um elemento HTML.
  */
 export function createCityElement(cityInfo) {
   const { name, country, temp, condition, icon, url } = cityInfo;
